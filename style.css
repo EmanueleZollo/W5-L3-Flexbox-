@@ -2,6 +2,15 @@ body{
     color: darkred;
 }
 
+h1{
+    font-size: 5rem;
+    text-align: center;
+}
+
+h2{
+    font-size: 3rem;
+    padding-inline-start: 50px;
+}
 /* NAV SETTING STYLE */
 
 ul{
@@ -12,6 +21,7 @@ ul{
   padding-top: 30px;
   padding-bottom: 30px;
   align-items: center;
+  padding-left: 0;
 }
 
 li{
@@ -45,6 +55,7 @@ li > span {
 article {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 h4{
@@ -57,6 +68,8 @@ h4{
     display: flex;
     min-height: 340px;
     flex-direction: column;
+    margin-bottom: 30px;
+    max-width: 400px;
 }
 
 .productImg {
@@ -101,16 +114,44 @@ h4{
 
 /* ASIDE STYLE SETTINGS DESKTOP */
 @media screen and (min-width: 700px) {
-    
-}
 aside {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #f3e8d0;
     border-radius: 20px;
+    
 }
 
+aside div {
+    margin-inline: 20px;
+}
+
+aside div h5{
+    font-size: xx-large;
+}
+}
 
 
 
 /* ASIDE STYLE SETTINGS MOBILE */
+
+@media screen and (max-width: 800px) {
+    aside {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #f3e8d0;
+        border-radius: 20px;
+    }
+
+    aside img{
+        flex-grow: 1;
+    }
+
+    aside div {
+        margin-bottom: 20px;
+    }
+    
+    aside div h5{
+        font-size: xx-large;
+    }
+    }
